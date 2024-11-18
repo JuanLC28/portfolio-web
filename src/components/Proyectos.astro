@@ -1,0 +1,31 @@
+---
+import BoxIcon from './icons/Box.astro';
+
+import ProyectoItem from './ProyectoItem.astro';
+---
+
+<section id="proyectos" class="text-gray-300 scroll-m-32">
+  <h2 class="text-3xl font-bold flex items-center gap-4">
+    <BoxIcon />Mis proyectos
+  </h2>
+
+  <ul class="mt-12 grid gap-10 md:grid-cols-2">
+    <ProyectoItem
+      titulo="Gestor de Tareas"
+      descripcion="Aplicación web para gestionar tareas diarias con funcionalidades CRUD, desarrollada en React."
+      imagen="to-do-list.webp"
+      imagenDescripcion="Lista de tareas con react"
+      linkVer="https://juanlc28.github.io/todo-list/"
+      linkCodigo="https://github.com/JuanLC28/todo-list"
+    />
+
+    <ProyectoItem
+      titulo="Gestor de Tareas"
+      descripcion="Aplicación web para gestionar tareas diarias con funcionalidades CRUD, desarrollada en React."
+      imagen="to-do-list.webp"
+      imagenDescripcion="Lista de tareas con react"
+      linkVer="https://juanlc28.github.io/todo-list/"
+      linkCodigo="https://github.com/JuanLC28/todo-list"
+    />
+  </ul>
+</section>

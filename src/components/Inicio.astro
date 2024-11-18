@@ -1,0 +1,46 @@
+---
+import LinkWithIcon from './LinkWithIcon.astro';
+
+import MailIcon from './icons/Mail.astro';
+import GitHubIcon from './icons/GitHub.astro';
+import LinkedInIcon from './icons/LinkedIn.astro';
+---
+
+<section class="text-gray-300 flex flex-col gap-10">
+  <figure>
+    <img
+      class="w-32 aspect-square object-cover rounded-full border-2 border-gray-300 shadow-xl shadow-yellow-400/15"
+      src="/juan-cristobal.webp"
+      alt="Juan Cristobal"
+    />
+  </figure>
+
+  <div class="flex flex-col gap-7 text-lg">
+    <h1 class="text-4xl font-bold">Hola, soy Juan Cristobal</h1>
+
+    <p>
+      <strong class="text-blue-500">Desarrollador web</strong> con 2 años de experiencia
+      en proyectos <strong class="text-blue-500">frontend</strong> y
+      <strong class="text-blue-500">backend</strong>. <strong
+        class="text-blue-500">Ingeniero de Sistemas</strong
+      > de Perú, especializado en <strong class="text-blue-500">PHP</strong>
+      y <strong class="text-blue-500">React</strong>, creando soluciones
+      eficientes y funcionales. Apasionado por aprender y mejorar
+      constantemente.
+    </p>
+
+    <div class="flex flex-wrap items-center gap-4 justify-start">
+      <LinkWithIcon link="mailto:juancristobalhidalgo@gmail.com">
+        <MailIcon slot="icon" /> Contáctame
+      </LinkWithIcon>
+
+      <LinkWithIcon link="https://www.linkedin.com/in/juan-cristobal-hidalgo/">
+        <LinkedInIcon slot="icon" /> LinkedIn
+      </LinkWithIcon>
+
+      <LinkWithIcon link="https://github.com/JuanLC28">
+        <GitHubIcon slot="icon" /> GitHub
+      </LinkWithIcon>
+    </div>
+  </div>
+</section>

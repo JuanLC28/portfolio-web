@@ -1,0 +1,31 @@
+---
+import FooterIcon from './FooterIcon.astro';
+
+import MailIcon from './icons/Mail.astro';
+import GitHubIcon from './icons/GitHub.astro';
+import LinkedInIcon from './icons/LinkedIn.astro';
+---
+
+<footer class="border-b pb-5">
+  <nav class="flex justify-between items-center">
+    <p class="text-gray-400 font-bold">
+      <span class="text-blue-700">J</span>uan <span class="text-blue-700"
+        >C</span
+      >ristobal
+    </p>
+
+    <div class="flex items-center gap-8 justify-start">
+      <FooterIcon link="mailto:juancristobalhidalgo@gmail.com">
+        <MailIcon />
+      </FooterIcon>
+
+      <FooterIcon link="https://www.linkedin.com/in/juan-cristobal-hidalgo/">
+        <LinkedInIcon />
+      </FooterIcon>
+
+      <FooterIcon link="https://github.com/JuanLC28">
+        <GitHubIcon />
+      </FooterIcon>
+    </div>
+  </nav>
+</footer>

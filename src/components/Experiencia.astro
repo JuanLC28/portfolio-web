@@ -1,0 +1,36 @@
+---
+import ToolIcon from './icons/Tool.astro';
+
+import ExperienciaItem from './ExperienciaItem.astro';
+---
+
+<section id="experiencia" class="text-gray-300 scroll-m-32">
+  <h2 class="text-3xl font-bold flex items-center gap-4">
+    <ToolIcon />Experiencia laboral
+  </h2>
+
+  <div class="ps-3">
+    <ol class="relative border-s border-gray-700 mt-12">
+      <ExperienciaItem
+        titulo="Desarrollador Freelance"
+        tiempo="Mayo 2023 - Presente"
+        descripcion="Diseñé y desarrollé aplicaciones web y de escritorio personalizadas utilizando tecnologías como PHP, Laravel, JavaScript, Python, React y más. Gestioné todas las fases de los proyectos, incluyendo bases de datos con MySQL y PostgreSQL, optimización de rendimiento y soporte técnico. Colaboré en equipo con control de versiones mediante Git, entregando soluciones funcionales y seguras."
+        actual={true}
+      />
+
+      <ExperienciaItem
+        titulo="Desarrollador Full Stack"
+        tiempo="Abril 2022 - Agosto 2022"
+        descripcion="Analicé requerimientos de software, diseñé bases de datos en MySQL y desarrollé módulos de aplicaciones con JavaScript. Verifiqué y optimicé el rendimiento de las aplicaciones para asegurar su funcionalidad y eficiencia."
+        actual={false}
+      />
+
+      <ExperienciaItem
+        titulo="Digitador de Base de Datos"
+        tiempo="Febrero 2022 - Abril 2022"
+        descripcion="Ingresé, actualicé y validé datos en sistemas internos, asegurando la calidad de la información y generando reportes precisos para apoyar decisiones estratégicas."
+        actual={false}
+      />
+    </ol>
+  </div>
+</section>

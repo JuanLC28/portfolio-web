@@ -1,0 +1,44 @@
+---
+interface Props {
+  titulo: string;
+  descripcion: string;
+  imagen: string;
+  imagenDescripcion: string;
+  linkVer: string;
+  linkCodigo: string;
+}
+
+const { titulo, descripcion, imagen, imagenDescripcion, linkVer, linkCodigo } =
+  Astro.props;
+---
+
+<li>
+  <article
+    class="bg-gray-700 shadow-xl shadow-gray-300/10 rounded-xl overflow-hidden"
+  >
+    <figure>
+      <img src={`/proyectos/${imagen}`} alt={imagenDescripcion} />
+    </figure>
+
+    <div class="p-5 flex flex-col gap-4">
+      <h3 class="font-bold text-lg">{titulo}</h3>
+
+      <p>{descripcion}</p>
+
+      <div>
+        <a
+          class="bg-[#111] text-sm py-1 px-5 rounded-xl hover:text-blue-700 hover:bg-gray-300 hover:font-semibold"
+          href={linkVer}
+          target="_blank"
+          rel="noopener noreferrer">Ver Proyecto</a
+        >
+        <a
+          class="bg-[#111] text-sm py-1 px-5 rounded-xl hover:text-blue-700 hover:bg-gray-300 hover:font-semibold"
+          href={linkCodigo}
+          target="_blank"
+          rel="noopener noreferrer">Ver Código</a
+        >
+      </div>
+    </div>
+  </article>
+</li>

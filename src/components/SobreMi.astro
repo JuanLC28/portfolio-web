@@ -1,0 +1,70 @@
+---
+import UserCodeIcon from './icons/UserCode.astro';
+
+import Css from './logos/Css.astro';
+import Php from './logos/Php.astro';
+import Git from './logos/Git.astro';
+import Html from './logos/Html.astro';
+import React from './logos/React.astro';
+import GitHub from './logos/GitHub.astro';
+import Laravel from './logos/Laravel.astro';
+import Tailwind from './logos/Tailwind.astro';
+import JavaScript from './logos/JavaScript.astro';
+import VisualStudioCode from './logos/VisualStudioCode.astro';
+---
+
+<section id="sobre-mi" class="text-gray-300 scroll-m-32">
+  <h2 class="text-3xl font-bold flex items-center gap-4">
+    <UserCodeIcon />Sobre Mí
+  </h2>
+
+  <div class="md:flex md:gap-16">
+    <div class="md:w-3/4">
+      <p class="mt-3 text-lg md:text-base mb-3">
+        Soy un <strong class="text-blue-500">desarrollador web</strong> apasionado
+        por transformar ideas en soluciones tecnológicas que aporten valor. Con
+        <strong class="text-blue-500"
+          >experiencia en desarrollo full stack</strong
+        >, me especializo en la creación de aplicaciones web dinámicas y
+        funcionales utilizando tecnologías modernas como PHP, React, y Laravel.
+      </p>
+
+      <p class="text-lg md:text-base mb-3">
+        A lo largo de mi trayectoria, he trabajado tanto en proyectos
+        independientes como en equipos multidisciplinarios, donde he demostrado
+        mi capacidad para adaptarme rápidamente y aprender nuevas herramientas.
+      </p>
+
+      <p class="text-lg md:text-base mb-3">
+        Además, me motiva el aprendizaje constante y la posibilidad de superar
+        nuevos retos, lo que me permite mantenerme actualizado en un sector tan
+        dinámico como el desarrollo web.
+      </p>
+
+      <ul
+        class="grid grid-cols-5 gap-10 md:gap-20 items-center py-12 px-5 md:px-10"
+      >
+        <li><Html /></li>
+        <li><Css /></li>
+        <li><JavaScript /></li>
+        <li><React /></li>
+        <li><Tailwind /></li>
+        <li><Php /></li>
+        <li><Laravel /></li>
+        <li><Git /></li>
+        <li><GitHub /></li>
+        <li><VisualStudioCode /></li>
+      </ul>
+    </div>
+
+    <figure
+      class="mx-auto w-3/5 md:w-1/4 flex justify-center items-center pt-16 md:items-start"
+    >
+      <img
+        class="aspect-square object-cover rounded-lg rotate-2 border-4 border-gray-300 shadow-2xl shadow-blue-700/35"
+        src="/juan-cristobal.webp"
+        alt="Juan Cristobal"
+      />
+    </figure>
+  </div>
+</section>
